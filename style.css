@@ -8,6 +8,9 @@ body {
     color: #5c5c5c;
 }
 
+
+/** ---- TYPO ---- **/
+
 p {
     font-weight: 300;
     padding: 0px 30px;
@@ -20,19 +23,6 @@ p.focus {
     padding: 22px;
     background: rgba(249,40,125,0.5);
     border-radius: 10px;
-}
-
-
-a.fancy-link {
-    text-decoration: none;
-    color: rgba(249,40,125,1);
-    font-weight: 600;
-}
-
-a.fancy-link:hover {
-    text-decoration: none;
-    color: rgba(249,118,86,1);
-    font-weight: 600;
 }
 
 h1 {
@@ -49,79 +39,8 @@ h2 {
   font-weight: 500;
 }
 
-.container{
-    max-width: 700px;
-    margin: auto;
-}
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 100%;
-  }
-}
-
-img#malt {
-    width: 74px;
-}
-
-.top-bg {
-    width: 100%;
-    height: 140px;
-    background-image: url(images/shore.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-border-top-left-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-radius-topleft: 8px;
-    -moz-border-radius-topright: 8px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.card{
-    margin: 50px;
-    -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
-    -moz-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
-    box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
-    border-radius: 10px;
-    text-align: center;
-    background: #ffffff;
-}
-
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .card {
-     margin: 10px;
-  }
-}
-
-.card{
-    margin: 50px;
-    -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
-    -moz-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
-    box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
-    border-radius: 10px;
-    text-align: center;
-    background: #ffffff;
-}
-
-hr.sep {
-    border: 1px solid #C2C2C2;
-    margin-top: 40px;
-}
+/** ---- IMAGE ---- **/
 
 img#avatar {
     display: block;
@@ -134,10 +53,6 @@ img#avatar {
 img#avatar {
 box-shadow: 0 0 0 rgba(0,176,255, 1);
 animation: pulse 3s infinite;
-}
-
-selector .elementor-button:hover {
-animation: none;
 }
 
 @-webkit-keyframes pulse{
@@ -156,53 +71,31 @@ animation: none;
     -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
     box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
 }
-
 }
 
 
+/** ---- BOUTTON  ---- **/
+/** fancy link **/
 
-
-
-
-
-
-
-
-
-
-
-
-
-ul.rs {
-    padding: 0px 30px 28px 30px;
-    margin: 0px;
-}
-
-ul.rs li {
-    list-style-type: none;
-    display: inline;
-}
-
-ul.rs li a {
-    color: #ffffff;
-    margin: 10px;
-    font-size: 25px;
-    background: #cccccc;
-    font-size: 20px;
-    display: inline-block;
-    padding: 9px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+a.fancy-link {
+    text-decoration: none;
+    color: rgba(249,40,125,1);
+    font-weight: 600;
+    padding: 5px 37px;
+    background: #ffffff;
+    border-radius: 31px;
+    font-size: 16px;
     transition: background 1s;
 }
 
-ul.rs li a:hover{
-    color: #ffffff;
-    background: #fd5068;
+a.fancy-link:hover {
+    text-decoration: none;
+    color: rgba(249,118,86,1);
+    background: rgba(249,118,86,0.2);
     transition: background 1s;
 }
 
+/** button **/
 .button {
   display: inline-block;
   margin: 18px auto;
@@ -256,4 +149,102 @@ box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.5);
 transition: box-shadow 1s ease-out;
 color; #ffffff;
 }
+
+
+ /* ---- STRUCTURE ---- */
+
+
+.container{
+    max-width: 700px;
+    margin: auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 100%;
+  }
+}
+
+.top-bg {
+    width: 100%;
+    height: 140px;
+    background-image: url(images/shore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card{
+    margin: 50px;
+    -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
+    -moz-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
+    box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.23);
+    border-radius: 10px;
+    text-align: center;
+    background: #ffffff;
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card {
+     margin: 10px;
+  }
+}
+
+hr.sep {
+    border: 1px solid #C2C2C2;
+    margin-top: 40px;
+}
+
+
+/** ---- SOCIAL LINK ---- **/
+
+ul.rs {
+    padding: 0px 30px 28px 30px;
+    margin: 0px;
+}
+
+ul.rs li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul.rs li a {
+    color: #ffffff;
+    margin: 10px;
+    font-size: 25px;
+    background: #cccccc;
+    font-size: 20px;
+    display: inline-block;
+    padding: 9px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: background 1s;
+}
+
+ul.rs li a:hover{
+    color: #ffffff;
+    background: #fd5068;
+    transition: background 1s;
+}
+
 
