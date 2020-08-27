@@ -13,6 +13,18 @@ p {
     padding: 0px 30px;
 }
 
+a {
+    text-decoration: none;
+    color: rgba(249,40,125,1);
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(249,118,86,1);
+    font-weight: 600;
+}
+
 h1 {
   font-size: 32px;
   font-weight: 400;
