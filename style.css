@@ -143,9 +143,9 @@ body {
 }
 
 .button:hover {
--webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
--moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.5);
-box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(249, 40, 125, 0.5);
+-moz-box-shadow:    0px 0px 10px 0px rgba(249, 40, 125, 0.5);
+box-shadow:         0px 0px 10px 0px rgba(249, 40, 125, 0.5);
 transition: box-shadow 1s ease-out;
 color; #ffffff;
 }
