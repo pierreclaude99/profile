@@ -13,6 +13,16 @@ p {
     padding: 0px 30px;
 }
 
+p.focus {
+    display: block;
+    width: 54%;
+    margin: 27px auto;
+    padding: 22px;
+    background: rgba(249,40,125,0.5);
+    border-radius: 10px;
+}
+
+
 a.fancy-link {
     text-decoration: none;
     color: rgba(249,40,125,1);
@@ -63,6 +73,10 @@ h2 {
   }
 }
 
+img#malt {
+    width: 74px;
+}
+
 .top-bg {
     width: 100%;
     height: 140px;
@@ -70,11 +84,11 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-border-top-left-radius: 8px;
--webkit-border-top-right-radius: 8px;
--moz-border-radius-topleft: 8px;
--moz-border-radius-topright: 8px;
-border-top-left-radius: 8px;
-border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .card{
@@ -93,10 +107,6 @@ border-top-right-radius: 8px;
      margin: 10px;
   }
 }
-
-
-
-
 
 .card{
     margin: 50px;
@@ -118,42 +128,45 @@ img#avatar {
     width: 151px;
     margin: -90px auto 24px auto;
     border-radius: 50%;
-    border: 11px solid rgba(255,255,255,0.5);
+    border: 10px solid rgba(255,255,255,0.7);
 }
 
 img#avatar {
 box-shadow: 0 0 0 rgba(0,176,255, 1);
-animation: pulse 1.5s infinite;
+animation: pulse 3s infinite;
 }
+
 selector .elementor-button:hover {
 animation: none;
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes pulse{
 0% {
-  -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
+    -moz-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
 }
-70% {
--webkit-box-shadow: 0 0 0 50px rgba(255,255,255,1);
+50% {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 100% {
--webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
+    -moz-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.65);
 }
+
 }
-@keyframes pulse {
-0% {
--moz-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
-}
-70% {
--moz-box-shadow: 0 0 0 50px rgba(0,255,255, 1);
-box-shadow: 0 0 0 50px rgba(255,255,255, 0);
-}
-100% {
--moz-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
-}
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -184,42 +197,11 @@ ul.rs li a {
     transition: background 1s;
 }
 
-
-
 ul.rs li a:hover{
     color: #ffffff;
     background: #fd5068;
     transition: background 1s;
 }
-
-a.fancy-ass-btn {
-    color: #ffffff;
-    background: rgb(249,40,125);
-    background: linear-gradient(90deg, rgba(249,40,125,1) 0%, rgba(249,118,86,1) 100%);
-    font-size: 14px;
-    line-height: 20px;
-    padding: 9px 37px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 31px;
-    margin: 18px auto;
-    display: block;
-    max-width: 104px;
-    transition: box-shadow 2s, background 2s;
-    cursor: pointer;
-}
-
-
-a.fancy-ass-btn:hover {
-  animation: pulse 1.5s infinite;
-    background: #fd5068;
-        transition: box-shadow 2s, background 2s
--webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.31);
-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.31);
-cursor: pointer;
-}
-
-
 
 .button {
   display: inline-block;
